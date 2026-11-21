@@ -1,0 +1,268 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shiva Singh | Personal Portfolio</title>
+<meta name="description" content="Official personal portfolio of Shiva Singh, BBA student, learner and aspiring professional.">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #080d18;
+  color: #f5f7ff;
+  line-height: 1.7;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: #101a2c;
+  padding: 18px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #25334a;
+}
+
+.logo {
+  font-size: 21px;
+  font-weight: bold;
+  color: #60a5fa;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+  font-size: 13px;
+}
+
+section {
+  padding: 75px 8%;
+  scroll-margin-top: 65px;
+}
+
+.hero {
+  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background: radial-gradient(circle at top right, #19365e, #080d18 60%);
+}
+
+.tag {
+  color: #60a5fa;
+  letter-spacing: 3px;
+  font-size: 12px;
+}
+
+h1 {
+  font-size: clamp(42px, 8vw, 70px);
+  line-height: 1.15;
+  margin: 15px 0;
+}
+
+h1 span, h2 span {
+  color: #60a5fa;
+}
+
+.hero p {
+  color: #b7c3d8;
+  max-width: 550px;
+  margin: 12px 0 25px;
+}
+
+.btn {
+  display: inline-block;
+  background: #2563eb;
+  color: white;
+  padding: 12px 23px;
+  border-radius: 7px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #3b82f6;
+}
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 25px;
+}
+
+.content {
+  max-width: 850px;
+  color: #b7c3d8;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 18px;
+}
+
+.card {
+  background: #111d31;
+  border: 1px solid #263954;
+  padding: 22px;
+  border-radius: 12px;
+}
+
+.card h3 {
+  color: #60a5fa;
+  margin-bottom: 8px;
+}
+
+.card p {
+  color: #b7c3d8;
+  font-size: 14px;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.skills span {
+  background: #172943;
+  color: #93c5fd;
+  border: 1px solid #345276;
+  padding: 9px 16px;
+  border-radius: 25px;
+  font-size: 14px;
+}
+
+.contact {
+  text-align: center;
+  background: #101a2c;
+}
+
+.contact p {
+  color: #b7c3d8;
+  margin-bottom: 22px;
+}
+
+footer {
+  padding: 22px;
+  text-align: center;
+  color: #8795aa;
+  font-size: 13px;
+  border-top: 1px solid #25334a;
+}
+
+@media(max-width: 600px) {
+  nav {
+    padding: 14px 4%;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  nav a {
+    margin-left: 8px;
+    font-size: 12px;
+  }
+
+  section {
+    padding: 60px 6%;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <div class="logo">SHIVA.</div>
+  <div>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<section class="hero" id="home">
+  <div class="tag">WELCOME TO MY PORTFOLIO</div>
+  <h1>Hi, I'm<br><span>Shiva Singh.</span></h1>
+  <h3>BBA Student | Future Professional</h3>
+  <p>
+    I am passionate about learning business, finance,
+    digital marketing and developing new skills.
+    My journey is all about learning, creating and growing.
+  </p>
+  <a href="#about" class="btn">Explore My World →</a>
+</section>
+
+<section id="about">
+  <h2>About <span>Me</span></h2>
+  <div class="content">
+    Hello! I am Shiva Singh, a Bachelor of Business
+    Administration (BBA) student.
+
+    I am interested in Business Management, Financial
+    Management, Digital Marketing and Personal Development.
+
+    My goal is to gain practical knowledge, build useful
+    projects and continuously improve myself.
+  </div>
+</section>
+
+<section id="skills">
+  <h2>My <span>Skills & Interests</span></h2>
+  <div class="skills">
+    <span>Business Management</span>
+    <span>Financial Management</span>
+    <span>Digital Marketing</span>
+    <span>Communication</span>
+    <span>MS Excel (Learning)</span>
+    <span>Personal Development</span>
+    <span>Creative Thinking</span>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>My <span>Projects</span></h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Digital Marketing</h3>
+      <p>BBA academic project about digital marketing concepts and strategies.</p>
+    </div>
+    <div class="card">
+      <h3>Business Studies</h3>
+      <p>Academic learning and research related to business and management.</p>
+    </div>
+    <div class="card">
+      <h3>Personal Growth</h3>
+      <p>My journey of learning new skills and improving myself every day.</p>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <h2>Let's <span>Connect</span></h2>
+  <p>Thank you for visiting my personal portfolio.</p>
+  <p>Interested in connecting or collaborating?</p>
+  <a href="mailto:YOUR_EMAIL@gmail.com" class="btn">Contact Me</a>
+</section>
+
+<footer>
+  © 2026 Shiva Singh. All Rights Reserved.
+  <br>Designed with passion and dedication.
+</footer>
+
+</body>
+</html>
